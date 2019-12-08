@@ -1,0 +1,121 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "コントローラー",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Controller",
+                    "slots": [
+                        {
+                            "name": "num",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "direction",
+                            "type": "direction"
+                        }
+                    ],
+                    "samples": [
+                        "{direction} {num}",
+                        " {num} センチ {direction} ",
+                        "{direction} に {num} センチ",
+                        "{direction} に {num} センチ移動して"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Land",
+                    "slots": [],
+                    "samples": [
+                        "着陸",
+                        "着陸して",
+                        "ランド"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "direction",
+                    "values": [
+                        {
+                            "id": "back",
+                            "name": {
+                                "value": "\bうしろ",
+                                "synonyms": [
+                                    "後",
+                                    "後ろ",
+                                    "後方"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "forward",
+                            "name": {
+                                "value": "まえ",
+                                "synonyms": [
+                                    "前",
+                                    "前方"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "down",
+                            "name": {
+                                "value": "した",
+                                "synonyms": [
+                                    "下",
+                                    "下降",
+                                    "下方"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "up",
+                            "name": {
+                                "value": "うえ",
+                                "synonyms": [
+                                    "上",
+                                    "上方",
+                                    "上昇"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "left",
+                            "name": {
+                                "value": "ひだり",
+                                "synonyms": [
+                                    "左"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "right",
+                            "name": {
+                                "value": "みぎ",
+                                "synonyms": [
+                                    "右"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
