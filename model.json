@@ -29,7 +29,7 @@
                     ],
                     "samples": [
                         "{direction} {num}",
-                        " {num} センチ {direction} ",
+                        "{num} センチ {direction} に移動して",
                         "{direction} に {num} センチ",
                         "{direction} に {num} センチ移動して"
                     ]
@@ -55,9 +55,8 @@
                         {
                             "id": "back",
                             "name": {
-                                "value": "\bうしろ",
+                                "value": "うしろ",
                                 "synonyms": [
-                                    "後",
                                     "後ろ",
                                     "後方"
                                 ]
